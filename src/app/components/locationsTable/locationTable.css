@@ -1,0 +1,117 @@
+.locationtable{
+    margin-top: 2rem;
+    box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    height: 80vh;
+    width: 50%;
+}
+
+.locationtable .top{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y:scroll;
+}
+
+.locationtable .titles{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.locationtable .title{
+    font-size: 1.3rem;
+    color: rgb(61, 61, 61);
+    font-weight: 700;
+}
+
+.locationtable .new{
+    background-color: teal;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+
+.locationtable .details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid grey;
+}
+
+.locationtable .left{
+    font-size: 1.1rem;
+    font-weight: 500;
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-evenly;
+
+}
+.locationtable .lefts{
+    font-size: 1.1rem;
+    font-weight: 500;
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-evenly;
+
+}
+
+.locationtable .uname{
+    text-align: left;
+    align-self: start;
+    flex: 1;
+}
+
+.locationtable  .unames{
+    color:blueviolet;
+    text-align: left;
+    align-self: start;
+    flex: 1;
+}
+
+.locationtable .right{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit{
+    color: blue;
+    cursor: pointer;
+}
+
+.delete{
+    color: crimson;
+    cursor: pointer;
+}
+
+.locationtable .locimage{
+
+    text-align: left;
+    align-self: start;
+    flex: 1;
+}
+
+.locationtable img{
+    border-radius: 1.5rem;
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+}

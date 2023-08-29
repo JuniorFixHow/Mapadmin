@@ -1,0 +1,12 @@
+.home{
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+
+}
+
+.home .down{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}

@@ -1,0 +1,120 @@
+.feedbacksTable{
+    margin-top: 2rem;
+    box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    height: 80vh;
+    width: 65%;
+}
+
+.feedbacksTable .top{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y:scroll;
+}
+
+.feedbacksTable .titles{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feedbacksTable .title{
+    font-size: 1.3rem;
+    color: rgb(61, 61, 61);
+    font-weight: 700;
+}
+
+.feedbacksTable .new{
+    background-color: teal;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+
+.feedbacksTable .details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid grey;
+    transition: 0.5s;
+}
+
+.feedbacksTable .details:hover{
+    background-color: lightblue;
+    padding-top: 0.2rem;
+    cursor: pointer;
+}
+.feedbacksTable .left{
+    font-size: 1.1rem;
+    font-weight: 500;
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-evenly;
+
+}
+.feedbacksTable .lefts{
+    font-size: 1.1rem;
+    font-weight: 500;
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-evenly;
+
+}
+
+.feedbacksTable .uname{
+    text-align: left;
+    align-self: start;
+    flex: 1;
+}
+.feedbacksTable .una{
+    text-align: justify;
+    align-self: start;
+    flex: 2;
+    font-weight: 400;
+}
+.feedbacksTable .unam{
+    text-align: right;
+    align-self:flex-end;
+    flex: 1;
+}
+
+.feedbacksTable  .unames{
+    color:blueviolet;
+    text-align: left;
+    align-self: start;
+    flex: 1;
+}
+
+.feedbacksTable .right{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit{
+    color: blue;
+    cursor: pointer;
+}
+
+.delete{
+    color: crimson;
+    cursor: pointer;
+}

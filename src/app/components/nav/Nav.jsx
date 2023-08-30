@@ -11,15 +11,21 @@ const Nav = () => {
     const handleUsers =()=>{
         navigate('/users');
     }
+    const handleLocations =()=>{
+        navigate('/locations');
+    }
+    const handleFeedbacks =()=>{
+        navigate('/feedbacks');
+    }
   return (
     <div className='nav' >
         <img src={logo} alt="logo" />
         <div className="items">
-            <div   className="one">
+            <div onClick={handleLocations}  className="one">
                 <MdLocationPin className='icon' />
                 <span className="title">Locations</span>
             </div>
-            <div className="one">
+            <div onClick={handleFeedbacks} className="one">
                 <RiFeedbackFill className='icon' />
                 <span className="title">Feedbacks</span>
             </div>

@@ -9,9 +9,8 @@ import FeedbacksTable from '../../components/feedbacksTable/FeedbacksTable';
 const Home = () => {
   return (
     <div className='home' >
-        <Header />
+        
         <div className='down' >
-          <Nav />
           <FeedbacksTable />
         </div>
     </div>

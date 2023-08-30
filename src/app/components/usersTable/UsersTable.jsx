@@ -3,14 +3,15 @@ import './usersTable.css';
 import {BsFillPencilFill} from 'react-icons/bs';
 import {ImBin2} from 'react-icons/im';
 import { Users } from '../../utils/dummyUsers';
-
-const UsersTable = () => {
+import NewUser from '../newUser/NewUser.jsx';
+ 
+const UsersTable = ({newUser, setNewUser}) => {
   return (
     <div className='usertable' >
         <div className="top">
             <div className="titles">
                 <span className="title">Admins</span>
-                <button className='new' >Add New</button>
+                <button onClick={()=>setNewUser(true)} className='new' >Add New</button>
             </div>
             <div className="lefts">
                 <span className="unames">Name</span>
@@ -35,6 +36,7 @@ const UsersTable = () => {
                 ))
             }
         </div>
+        <NewUser setNewUser={setNewUser} newUser = {newUser} />
     </div>
   )
 }

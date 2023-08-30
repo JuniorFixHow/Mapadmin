@@ -3,14 +3,15 @@ import './locationTable.css';
 import {BsFillPencilFill} from 'react-icons/bs';
 import {ImBin2} from 'react-icons/im';
 import { Locations } from '../../utils/dummyLocations';
+import NewLocation from '../newLocation/NewLocation';
 
-const LocationsTable = () => {
+const LocationsTable = ({newLocation, setNewLocation}) => {
   return (
     <div className='locationtable' >
         <div className="top">
             <div className="titles">
                 <span className="title">Locations</span>
-                <button className='new' >Add New</button>
+                <button onClick={()=>setNewLocation(true)} className='new' >Add New</button>
             </div>
             <div className="lefts">
                 <span className="unames">Image</span>
@@ -37,6 +38,7 @@ const LocationsTable = () => {
                 ))
             }
         </div>
+        <NewLocation newLocation={newLocation} setNewLocation={setNewLocation} />
     </div>
   )
 }
